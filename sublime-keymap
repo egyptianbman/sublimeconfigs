@@ -1,0 +1,54 @@
+[
+
+  /**
+   * Custom plugin backed up in ~/sublime/plugins/
+   * Exits insert mode on page save via ctrl+s.
+   */
+  { "keys": ["ctrl+s"], "command": "save_and_exit_insert_mode" },
+
+  /**
+   * Insert line above and below current.
+   */
+  { "keys": ["ctrl+j"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line.sublime-macro"} },
+  { "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line Before.sublime-macro"} },
+
+  /**
+   * Quick next and previous tab.
+   */
+  { "keys": ["ctrl+t", "ctrl+n"], "command": "next_view" },
+  { "keys": ["ctrl+t", "ctrl+p"], "command": "prev_view" },
+
+  /**
+   * Toggle the sidebar
+   */
+  { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+
+  /**
+   * Restore ctrl+r to redo.
+   */
+  { "keys": ["ctrl+r"], "command": "redo_or_repeat" },
+
+  /**
+   * Make alt+f be the function search.
+   */
+  { "keys": ["alt+f"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+
+  /**
+   * Surround
+   */
+   // { "keys": ["ctrl+shift+a"], "command": "add_surround" },
+   // { "keys": ["ctrl+shift+d"], "command": "delete_surround" },
+   // { "keys": ["ctrl+shift+r"], "command": "replace_surround" },
+
+  /**
+   * CodeIntel override click.
+   */
+  // { "keys": ["ctrl+l"], "command": "code_intel_auto_complete" }
+  { "keys": ["ctrl+space"], "command": "code_intel_auto_complete" },
+
+  /**
+   * Restore ctrl+f find functionality.
+   */
+  { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find"} }
+
+]
