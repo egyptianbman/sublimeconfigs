@@ -1,0 +1,7 @@
+import sublime, sublime_plugin
+
+class saveAndExitInsertMode(sublime_plugin.TextCommand):
+  def run(self, edit):
+    self.view.run_command("save")
+    self.view.run_command("exit_insert_mode")
+
